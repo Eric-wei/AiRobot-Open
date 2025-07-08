@@ -1,0 +1,25 @@
+Altium Designer Pick and Place Locations
+D:\source\ElectronBot-main\ElectronBot-main\1.Hardware\ServoDrive-DK\Project Outputs for ServoDrive-DK\Pick Place for ServoDrive-DK.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       21/04/25
+Time:       19:47
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+"Designator","Comment","Layer","Footprint","Center-X(mm)","Center-Y(mm)","Rotation","Description"
+"P2","SH1.0-4P","TopLayer","SH1.0-4P","-3.8020mm","7.9375mm","180",""
+"P1","SH1.0-5P","TopLayer","SH1.0-5P","3.3020mm","7.9375mm","180",""
+"U2","TL431IDBZT","BottomLayer","SOT23-3","-1.2700mm","-1.2700mm","90","Adjustable precision shunt regulator 3-SOT-23 -40 to 85"
+"R1","120R","BottomLayer","RES_0402","-3.3020mm","-1.2700mm","270","Resistor"
+"U1","LP2992","BottomLayer","SOT23-5","-0.4332mm","2.0320mm","0","LDO"
+"R2","10K","BottomLayer","RES_0402","-2.9210mm","0.6350mm","90","Resistor"
+"C4","0.1uF","BottomLayer","CAP_0402","-2.9210mm","2.4130mm","270","Capacitor"
+"C3","10nF","BottomLayer","CAP_0402","2.5400mm","2.9210mm","0","Capacitor"
+"C2","0.1uF","BottomLayer","CAP_0402","2.5400mm","1.3970mm","180","Capacitor"
+"C1","10uF","BottomLayer","CAP_0402","2.5400mm","2.1590mm","180","Capacitor"
+"U4","STM32F030F6/STM32F042F6","TopLayer","TSSOP-20","0.0000mm","0.0000mm","0","ARM Cortex-M0 32-bit MCU, 16 KB Flash, 4 KB Internal RAM, 15 I/Os, 20-pin TSSOP, -40 to 85 degC, Tube"
+"U3","FM116B","BottomLayer","SOT23-6","2.0320mm","-1.3970mm","270",""

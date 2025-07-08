@@ -1,0 +1,25 @@
+Altium Designer Pick and Place Locations
+D:\Desktop\电子机器人文件\1.Hardware\ServoDrive-DK\Pick Place for ServoDrive-DK.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       21-04-25
+Time:       18:55
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Comment                 Layer       Footprint Center-X(mil) Center-Y(mil) Rotation Description                                                                                             
+P2         SH1.0-4P                TopLayer    SH1.0-4P  -149.685      312.500       180      ""                                                                                                      
+P1         SH1.0-5P                TopLayer    SH1.0-5P  130.000       312.500       180      ""                                                                                                      
+U2         TL431IDBZT              BottomLayer SOT23-3   -50.000       -50.000       90       "Adjustable precision shunt regulator 3-SOT-23 -40 to 85"                                               
+R1         120R                    BottomLayer RES_0402  -130.000      -50.000       270      Resistor                                                                                                
+U1         LP2992                  BottomLayer SOT23-5   -17.055       80.000        0        LDO                                                                                                     
+R2         10K                     BottomLayer RES_0402  -115.000      25.000        90       Resistor                                                                                                
+C4         0.1uF                   BottomLayer CAP_0402  -115.000      95.000        270      Capacitor                                                                                               
+C3         10nF                    BottomLayer CAP_0402  100.000       115.000       0        Capacitor                                                                                               
+C2         0.1uF                   BottomLayer CAP_0402  100.000       55.000        180      Capacitor                                                                                               
+C1         10uF                    BottomLayer CAP_0402  100.000       85.000        180      Capacitor                                                                                               
+U4         STM32F030F6/STM32F042F6 TopLayer    TSSOP-20  0.000         0.000         0        "ARM Cortex-M0 32-bit MCU, 16 KB Flash, 4 KB Internal RAM, 15 I/Os, 20-pin TSSOP, -40 to 85 degC, Tube" 
+U3         FM116B                  BottomLayer SOT23-6   80.000        -55.000       270      ""                                                                                                      

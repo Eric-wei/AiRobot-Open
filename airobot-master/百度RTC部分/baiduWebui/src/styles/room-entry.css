@@ -1,0 +1,102 @@
+/**
+ * @Author: zhujinlong
+ * @Date:   2025-04-22 10:50:37
+ * @Last Modified by:   zhujinlong
+ * @Last Modified time: 2025-04-22 10:54:17
+ */
+.room-entry-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.room-entry-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  margin-bottom: 10px;
+}
+
+.title-font-color {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.agent-id {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.details {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-line {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button.big {
+  width: 240px;
+}
+
+.button.blue {
+  background-color: #007AFF;
+  color: white;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #0056b3;
+} 

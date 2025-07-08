@@ -1,0 +1,49 @@
+*/采用时间片轮询来控制多个舵机转动，在整个舵机完全
+servos = [
+    {"pin": 18, "current": 0, "target": 90, "speed": 30},
+    {"pin": 19, "current": 180, "target": 90, "speed": 45}
+]
+
+while True:
+    all_done = True
+    for servo in servos:
+        if abs(servo["current"] - servo["target"]) > 1:
+            # 更新角度（非阻塞）
+            step = servo["speed"] * 0.02  # 假设主循环间隔20ms
+            servo["current"] += min(step, servo["target"] - servo["current"])
+            pi.set_servo_pulsewidth(servo["pin"], angle_to_pulse(servo["current"]))
+            all_done = False
+    
+    if all_done:
+        break
+    time.sleep(0.02)  # 全局控制频率
+
+*/同样采用时间戳来控制舵机的转动
+import pigpio
+import time
+
+pi = pigpio.pi()
+
+servos = [
+    {"pin": 18, "current_angle": 90, "target_angle": 0, "speed": 30},
+    {"pin": 23, "current_angle": 90, "target_angle": 180, "speed": 45}
+]
+
+def update_servos():
+    for servo in servos:
+        if abs(servo["current_angle"] - servo["target_angle"]) > 1:  # 未到达目标
+            step = servo["speed"] * 0.05  # 根据速度和时间间隔计算步长
+            if servo["current_angle"] < servo["target_angle"]:
+                servo["current_angle"] = min(servo["current_angle"] + step, servo["target_angle"])
+            else:
+                servo["current_angle"] = max(servo["current_angle"] - step, servo["target_angle"])
+            pi.set_servo_pulsewidth(servo["pin"], 500 + (servo["current_angle"] / 180) * 2000)
+try:
+    while True:
+        update_servos()
+        time.sleep(0.05)  # 控制更新频率
+except KeyboardInterrupt:
+    pi.stop()
+
+
+sudo systemctl start lgpiod
